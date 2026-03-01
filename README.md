@@ -122,7 +122,7 @@ MainActivity.kt
 
 ## Running the Project
 The project runs when MainActivity is launched.
-A coroutine is started using lifecyclecScope to call the APIs
+A coroutine is started using lifecycleScope to call the APIs
 
 Set your candidateId inside MainActivity and run:
 
