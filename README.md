@@ -1,6 +1,6 @@
 # Crossmint Megaverse Challenge
 
-This project implements the Crossmint Megaverse challange using Kotlin and Retrofit.
+This project implements the Crossmint Megaverse challenge using Kotlin and Retrofit.
 
 The goal is to build Megaverse maps by calling the Crossmint API and placing objects such as Polyanets, Soloons and Comeths at the correct coordinates.
 
