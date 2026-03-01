@@ -75,11 +75,11 @@ suspend fun runPhase2(candidateId: String, repository: MegaverseRepository) {
 }
 
 /**
-Retries a network request when we see 429 from server so that we can resume building our map instead of starting again
-There must be a rate limit on how frequently requests can be made resulting in 429 for very quick requests
-This method leverages exponential backoff, each attempt adds a cool down period
-Attempt 1-> 1 second, Attempt 2 -> 2 seconds, Attempt 3 -> 4 seconds (capped at 20 seconds)
-But only HTTP 429 are retried, if there is other error we don't retry
+* Retries a network request when we see 429 from server so that we can resume building our map instead of starting again
+* There must be a rate limit on how frequently requests can be made resulting in 429 for very quick requests
+* This method leverages exponential backoff, each attempt adds a cool down period
+* Attempt 1-> 1 second, Attempt 2 -> 2 seconds, Attempt 3 -> 4 seconds (capped at 20 seconds)
+* But only HTTP 429 are retried, if there is other error we don't retry
 */
 
 suspend fun <T> retryOn429(
